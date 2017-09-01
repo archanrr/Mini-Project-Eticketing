@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<input type="text" name="user" id="user"/>
+<input type="button" onclick="find()" value="find password"/>
+<input type="text" name="pass" id="pass"/>
+<p id="arrr"></p>
+<script>
+function find()
+{
+var a=document.getElementById("user").value;
+xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    var obj=JSON.parse(this.responseText);
+     document.getElementById("arrr").innerHTML=obj.type+obj.start;
+    }
+};
+
+xmlhttp.open("GET","test.php?q="+a, true);
+xmlhttp.send();
+}
+</script>
+
+</body>
+</html>

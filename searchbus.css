@@ -1,0 +1,115 @@
+@keyframes example1 {
+    from {color:blue;}
+    to {color: yellow;}
+}
+@keyframes example {
+    from {background-color:red;}
+    to {background-color: blue;}
+}
+
+ul {
+    list-style-type: none;
+    position:relative;
+    align:top;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+    animation-name: example;
+    animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: rgb(155,165,0);
+}
+sa{
+animation-name: example1;
+    animation-duration: 6s;
+  animation-iteration-count: infinite;
+
+}
+.welcome
+{
+
+    background-image:"http://travelsukh.com/images/BusBanner.jpg";
+    width: 75%;
+    padding: 10px;
+    border: 5px ;
+    margin: 0;
+    animation-name:example1;
+    animation-duration: 3s;
+  animation-iteration-count: 300;
+
+}
+body{
+background-image:"http://www.anteagroup.com/sites/default/files/shutterstock_110286629.jpg";
+background-size:cover;
+}
+.login,.login1
+{
+margin:10px;
+border: 5px solid gray;
+ border-radius: 12px;
+width:50%;
+style:obique;
+}
+#sign{
+
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+
+}
+#sign:hover{
+opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+body{
+background-image:url(http://www.anteagroup.com/sites/default/files/shutterstock_110286629.jpg) ;
+}
+label
+{
+color:black;
+font-style:italic
+}
+li vx
+{
+width:15px;
+height:15px;
+}
+.search{
+border:3px solid black;
+border-radius:12px;
+width:75%;
+}
+.cancel{
+border:3px solid black;
+border-radius:12px;
+width:50%;
+}
+#map
+{
+border:5px solid green;
+}

@@ -1,0 +1,40 @@
+<html>
+<head>
+<style>
+</style>
+<title>ADMIN PAGE.....</TITLE>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="search.css">
+ <ul>
+  <li style="float:right"><img height="10%" src="http://www.lomas-travel.com.mx/images/transfers/nuevas/bus.png"/>
+  <li style="float:right"><h1><b>FASTBUS Online<b></h1></li>
+  <li><a href="search.html">Home</a></li>
+<li><a href="searchbus.html">Search bus</a></li>
+  <li><a href="login.html">Login</a></li>
+  <li><a href="authoritylogin.html">ADMIN</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="feedback.html">Feedback</a></li>
+</ul>
+  </head>
+<center><br><br><br>
+<body>
+<center>
+<div class="login">
+<form action="update.php" method="post">
+<sa><h3>BUS DETAILS</h3></sa><br><br>
+<label>BUS NAME:</label>&nbsp&nbsp&nbsp<input type="text" name="bus" placeholder="travels" required /><br><br><br>
+<label>BUS TYPE:</label>&nbsp&nbsp&nbsp<input type="text" name="type" placeholder="AC/NON-AC" required /><br><br><br>
+<label>SOURCE:</label>&nbsp&nbsp&nbsp<input type="TEXT" name="source" placeholder="IN CAPS" /><br><br><br>
+<label>DESTINATION:</label>&nbsp&nbsp&nbsp<input type="text" name="destination" placeholder="IN CAPS"/><br><br><br>
+<label>START TIME:</label>&nbsp&nbsp&nbsp<input  type="time" name="start" placeholder="00:00:00" required/><br><br><br>
+<label>END TIME:</label>&nbsp&nbsp&nbsp<input  type="time" name="end"placeholder="00:00:00" required /><br><br><br>
+<label>NO OF SEATS</label>&nbsp&nbsp&nbsp<input type="text" name="noofseats" placeholder="24" required /><br><br><br>
+<label>PRICE:</label>&nbsp&nbsp&nbsp<input type="text" name="price" placeholder="Amount in Rupees" /><br><br><br>
+<center><button type="submit" id="sign" value="SIGNUP">SIGNUP</BUTTON><center>
+</form>
+</div>
+</body>
+</center>
+</html>

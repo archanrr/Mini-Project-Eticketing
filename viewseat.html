@@ -1,0 +1,301 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>VIEW SEAT AVAILABLITY</title>
+</head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="searchbus.css">
+<body> 
+<ul>
+  <li style="float:right"><img height="10%"  src="http://www.lomas-travel.com.mx/images/transfers/nuevas/bus.png"/></li>
+  <li style="float:right"><h1><label><b>FASTBUS Online<b></label></h1></li>
+  <li><a href="search.html">Home</a></li>
+  <li><a href="searchbus.html">Search bus</a></li>
+  <li><a href="login.html">Login</a></li>
+  <li><a href="cancel.html">Cancelation</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="feedback.html">Feedback</a></li>
+</ul>
+
+<style>
+body
+{
+  background:url("http://www.kastler.at/uploads/tx_flexslider/RoemersteinBus_Innen3_465x280.JPG");
+  background-size:cover;
+}
+
+#door
+{
+ width:10%;
+ height:8%;
+float:left;
+}
+#stear
+{
+
+ width:10%;
+ height:8%;
+}
+.seats
+{
+   border:5px  solid gray;
+    color:green;
+   text-align: center;
+    width:20%;
+    text-decoration: none;
+     border-style: solid;
+    border-top-color: green;
+     border-radius:12px;
+    word-wrap: break-word;
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Safari */
+    transform: rotate(270deg); /* Standard syntax */
+    background-color:white;
+     opacity:0.6;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+   #free
+   {
+     
+         width:20px;
+	 height:20px;
+	
+   }
+   #bookbutton
+   {
+     text-align:center;
+	 
+   }
+   #main
+   {
+     text-align:center;
+   }
+#rino
+{
+background-color:red;
+}
+
+ input[type=checkbox]:selected
+ {
+   
+   width:20px;
+   height:20px;
+   background-color:red;
+   box-shadow: 3px 3px 5px #888888;
+   left:660px;
+    opacity:0.8;
+   }
+    #selected
+   {
+   width:20px;
+   height:20px;
+   background-color:green;
+   box-shadow: 3px 3px 5px #888888;
+   left:660px;
+    opacity:0.8;
+   }
+</style>
+<body>
+<input type="checkbox" id="rino">
+<form id="main" action="viewseat.php" method="post">
+<center>
+<div class="seats">
+<br>
+<input type="image" id="door" src="https://cdn2.iconfinder.com/data/icons/travel-transportation-set-1/64/open-door-bus-transportation-train-512.png">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="image" id="stear" src="http://www.freeiconspng.com/uploads/wheels-icon-png-21.png">
+<br><br>
+
+<input type="hidden" id="id1"  name="1" value="999">
+<input type="button" id="1" name="1" value="1" onclick="seat(this.id)"  />
+
+<input type="button" id="2" name="2" value="1." onclick="seat(this.id)"/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="button" id="3" name="3" value="3" onclick="seat(this.id)"/>
+<input type="button" id="4" name="4" value="4" onclick="seat(this.id)"/><br>
+<input type="button" id="5" name="5" value="5" onclick="seat(this.id)" />
+<input type="button"id="6" name="6" value="6" onclick="seat(this.id)" />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="button" id="7" name="7" value="7" onclick="seat(this.id)"/>
+<input type="button" id="8" name="8" value="8" onclick="seat(this.id)" /><br>
+<input type="button" id="9" name="9" value="9" onclick="seat(this.id)"/>
+<input type="button" id="10" name="10" value="10" onclick="seat(this.id)" />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="button" id="11" name="11" value="11" onclick="seat(this.id)"/ >
+<input type="button" id="12" name="12" value="12"  onclick="seat(this.id)"/><br>
+<input type="button" id="13" name="13" value="13"  onclick="seat(this.id)"/>
+<input type="button" id="14" name="14" value="14"  onclick="seat(this.id)"/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="button" id="15" name="15" value="15"  onclick="seat(this.id)"/ >
+<input type="button" id="16" name="16" value="16"  onclick="seat(this.id)"/><br>
+<input type="button" id="17" name="17" value="17"  onclick="seat(this.id)"/>
+<input type="button" id="18" name="18" value="18"  onclick="seat(this.id)"/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="button" id="19" name="19" value="19"  onclick="seat(this.id)"/>
+<input type="button" id="20" name="20" value="20"  onclick="seat(this.id)"/><br>
+<input type="button" id="21" name="21" value="21"  onclick="seat(this.id)"/>
+<input type="button" id="22" name="22" value="22"  onclick="seat(this.id)"/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="button" id="23" name="23" value="23"  onclick="seat(this.id)"/>
+<input type="button" id="24" name="24" value="24"  onclick="seat(this.id)"/><br>
+</center>
+</div>
+<input "id="myBtn" type="submit" value="book">
+</form>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    WELCOME.......
+  </div>
+
+</div>
+<br><br>
+<div class="reference">
+<label>BOOKED:</label><input type="button" id="@"/>
+<label>AVAILABLE:</label><input type="button" id="@1"/>
+</div>
+</body>
+<script src="seat.js">
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+} 
+function seat(id)
+{ 
+$("#"+id).css("background-color","green");
+var a=document.getElementById(id);
+a.setAttribute("value","1");
+}
+</script>
+</html>
+{
+<div id="view">
+<form id="main" action="viewseat.php" method="post">
+<center>
+<div class="seats">
+<br>
+<input type="image" id="door" src="https://cdn2.iconfinder.com/data/icons/travel-transportation-set-1/64/open-door-bus-transportation-train-512.png">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="image" id="stear" src="http://www.freeiconspng.com/uploads/wheels-icon-png-21.png">
+<br><br>
+
+<input type="checkbox" id="1" name="1" value="901" onchange="seat(this.id)" />
+<input type="checkbox" id="2" name="2" value="902" onchange="seat(this.id)"/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="checkbox" id="3" name="3" value="903" onchange="seat(this.id)"/>
+<input type="checkbox" id="4" name="4" value="904" onchange="seat(this.id)"/><br>
+<input type="checkbox" id="5" name="5" value="905" onchange="seat(this.id)" />
+<input type="checkbox"id="6" name="6" value="906" onchange="seat(this.id)" />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="checkbox" id="7" name="7" value="907" onchange="seat(this.id)"/>
+<input type="checkbox" id="8" name="8" value="908" onchange="seat(this.id)" /><br>
+<input type="checkbox" id="9" name="9" value="909" onchange="seat(this.id)"/>
+<input type="checkbox" id="10" name="10" value="910" onchange="seat(this.id)" />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="checkbox" id="11" name="11" value="911" onchange="seat(this.id)"/ >
+<input type="checkbox" id="12" name="12" value="912"  onchange="seat(this.id)"/><br>
+<input type="checkbox" id="13" name="13" value="913"  onchange="seat(this.id)"/>
+<input type="checkbox" id="14" name="14" value="914"  onchange="seat(this.id)"/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="checkbox" id="15" name="15" value="915"  onchange="seat(this.id)"/ >
+<input type="checkbox" id="16" name="16" value="916"  onchange="seat(this.id)"/><br>
+<input type="checkbox" id="17" name="17" value="917"  onchange="seat(this.id)"/>
+<input type="checkbox" id="18" name="18" value="918"  onchange="seat(this.id)"/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="checkbox" id="19" name="19" value="919"  onchange="seat(this.id)"/>
+<input type="checkbox" id="20" name="20" value="920"  onchange="seat(this.id)"/><br>
+<input type="checkbox" id="21" name="21" value="921"  onchange="seat(this.id)"/>
+<input type="checkbox" id="22" name="22" value="922"  onchange="seat(this.id)"/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="checkbox" id="23" name="23" value="923"  onchange="seat(this.id)"/>
+<input type="checkbox" id="24" name="24" value="924"  onchange="seat(this.id)"/><br>
+</center><br>
+<center><input "id="Btn" type="submit" value="BOOK"/></center>
+</div>
+</form>
+</div>
+<script>
+  $("#view").hide();
+
+    $("#btn").click(function(){
+        $("#view").show(1000);
+    });
+$("#btn1").click(function(){
+     $("#view").show(1000);
+});
+function view()
+{
+//location="viewseat.html";
+}
+function seat(id)
+{ 
+$("#"+id).css("background-color","green");
+var a=document.getElementById(id);
+a.setAttribute("value","1");
+}
+</script src="seat.js">
+</script>
+
+}

@@ -1,0 +1,165 @@
+@keyframes example1 {
+    from {color:blue;}
+    to {color: yellow;}
+}
+@keyframes example {
+    from {background-color:red;}
+    to {background-color: blue;}
+}
+
+label{
+   
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250;
+    text-align:center;
+}
+input {
+  align:center;
+  display: inline-block;
+  float: left;
+}
+input:hover
+{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h3
+{
+ text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ul {
+    list-style-type: none;
+    position:relative;
+    align:top;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+    animation-name: example;
+    animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: rgb(155,165,0);
+}
+sa{
+animation-name: example1;
+    animation-duration: 6s;
+  animation-iteration-count: infinite;
+ text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.welcome
+{
+
+    background-image:"http://travelsukh.com/images/BusBanner.jpg";
+    width: 75%;
+    padding: 10px;
+    border: 5px ;
+    margin: 0;
+     
+animation-name: example1;
+    animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+.about{
+    border:5px  solid gray;
+    color:green;
+   text-align: center;
+    width:60%;
+    padding: 14px 16px;
+    text-decoration: none;
+     border-style: solid;
+    border-top-color: green;
+     border-radius:12px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   }
+body{
+background-image:url "http://www.9to5carwallpapers.com/wp-content/uploads/2015/09/2015-Luxury-Coach.jpg";
+background-size:cover;
+}
+.login
+{
+margin:10px;
+padding: 14px 16px;
+border: 5px solid gray;
+ border-radius: 12px;
+height:50%;
+width:50%;
+opacity: 1.0;
+filter: alpha(opacity=100);
+}
+.login1
+{
+margin:10px;
+padding: 14px 16px;
+border: 5px solid gray;
+ border-radius: 12px;
+height:70%;
+width:50%;
+opacity: 1.0;
+filter: alpha(opacity=100);
+}
+
+#sign{
+
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+
+}
+#sign:hover{
+opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+body{
+background-image:url("") ;
+background-size:cover;
+}
+label
+{
+color:black;
+font-style:italic
+}
+li vx
+{
+width:15px;
+height:15px;
+}
+.search{
+border:3px solid black;
+border-radius:12px;
+width:75%;
+}
+.cancel{
+border:3px solid black;
+border-radius:12px;
+width:50%;
+}
+#map
+{
+border:5px solid green;
+}
